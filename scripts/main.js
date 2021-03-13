@@ -12,3 +12,9 @@ if(!Vars.headless){
     meta.author = "[#FCC21B]joshwelyt";
     meta.description = "[red]why did you download this";
   });
+
+//so hard it limits your fucking vision
+Events.on(ClientLoadEvent, () => {
+  Vars.renderer.maxZoom = 10.99999;
+  Vars.renderer.minZoom = 20.99999;
+});
