@@ -1,12 +1,7 @@
 name: lunaticmode
 displayName: "[purple]lunatic mode"
 author: "[gold]joshwelyt"
-description: ```
-Lunatic mode adds second planet for you to play
-On try completing both planets
-Not for novices like really just dont
-why did you download this
-```
+description: "dare try my challenge?"
 version: vpain
 hidden: false
 minGameVersion: 126.1
