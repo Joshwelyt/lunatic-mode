@@ -7,7 +7,7 @@ Planets.serpulo.orbitRadius = 5.6;
 if(!Vars.headless){
   Core.app.post(() => {
     const meta = Vars.mods.locateMod("lunaticmode").meta;
-    meta.displayName = "[purple]lunatic mode";
+    meta.displayName = "[purple]lunaticmode";
     meta.author = "[#FCC21B]joshwelyt";
     meta.description = "[red]why did you download this";
   });
