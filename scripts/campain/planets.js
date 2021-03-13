@@ -23,43 +23,50 @@ const graveyard = extend(SectorPreset, "graveyard", ulopers, 3, {
 const death = extend(SectorPreset, "death", ulopers, 6, {
     captureWave: 50,
     localizedName: "Death",
-    difficulty: 3
+    difficulty: 3, 
+    alwaysUnlocked: true
 });
 
 const valleyofsouls = extend(SectorPreset, "valleyofsouls", ulopers, 1, {
     captureWave: 30,
     localizedName: "Valley Of Souls",
-    difficulty: 1
+    difficulty: 1, 
+    alwaysUnlocked: true
 });
 
 const shatteredspirits = extend(SectorPreset, "shatteredspirits", ulopers, 8, {
     captureWave: 60,
     localizedName: "Shattered Spirits",
-    difficulty: 4
+    difficulty: 4, 
+    alwaysUnlocked: true
 });
     
 const lostsouls = extend(SectorPreset, "lostsouls", ulopers, 14, {
     captureWave: 70,
     localizedName: "Lost Souls",
-    difficulty: 5
+    difficulty: 5, 
+    alwaysUnlocked: true
 });
 
 const lostdesert = extend(SectorPreset, "lostdesert", ulopers, 18, {
     captureWave: 100,
     localizedName: "Lost Desert",
-    difficulty: 10
+    difficulty: 10, 
+    alwaysUnlocked: true
 });
 
 const hell = extend(SectorPreset, "hell", ulopers, 24, {
     captureWave: 150,
     localizedName: "hell",
-    difficulty: 10
+    difficulty: 10, 
+    alwaysUnlocked: true
 });
 
 const firstcru = extend(SectorPreset, "firstcru", ulopers, 28, {
     captureWave: 150,
     localizedName: "cattka rucx pam",
-    difficulty: 20
+    difficulty: 20, 
+    alwaysUnlocked: true
 });
 
 module.exports = {
