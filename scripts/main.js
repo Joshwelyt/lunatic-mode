@@ -1,4 +1,5 @@
 require("content/turrets");
+require("content/blocks");
 
 Vars.content.units().each(e => e.health *= 2);
 Planets.sun.atmosphereRadOut = 10;
