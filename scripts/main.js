@@ -18,27 +18,6 @@ Events.on(ClientLoadEvent, () => {
   Vars.renderer.maxZoom = 10.99999;
   Vars.renderer.minZoom = 20.99999;
 });
-
-const ui = require("ui/library");
-ui.addMenuButton("Select Launchpad Destination", "upOpen", () => {
-    Vars.ui.planet.showSelect(
-        Vars.content.getByName(ContentType.planet, "serpulo").sectors.get(15),
-        dest => {
-            Vars.content.getByName(ContentType.planet, "serpulo").sectors.each(sector => {
-                sector.info.destination = dest;
-            });
-        }
-    );
-});
-
-
-/*
-Vars.ui.planet.showSelect(
-    Vars.content.getByName(ContentType.planet, "serpulo").sectors.get(15),
-    dest => {
-        Vars.content.getByName(ContentType.planet, "serpulo").sectors.each(sector => {
-            sector.info.destination = dest;
-        });
-    }
-);
-*/
+Events.on(Trigger.newGame.class,e=>{Vars.state.rules.winWave = 60});
+Vars.content.units().each(s=>s.speed = 0.10);
+print("Load Complete!");
