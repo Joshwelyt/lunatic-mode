@@ -2,7 +2,7 @@
 turns the game to lunatic mode dare to try my challenge? 
 # planets
 Serpulo
-Ulopers
+Ulopers not here atm but soon
 # changes
 Added new custom planet might add custom planet gen soon
 SO MUCH TURRETS AND UNITS NERF
