@@ -1,6 +1,6 @@
 require("content/turrets");
 require("content/blocks");
-require("campain/planets);
+require("campaign/planets);
 
 Vars.content.units().each(e => e.health *= 2);
 Planets.serpulo.orbitRadius = 5.6;
