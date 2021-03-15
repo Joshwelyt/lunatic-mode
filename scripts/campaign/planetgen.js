@@ -308,5 +308,5 @@ ulopersGenerator.waterOffset = 0.07;
 ulopersGenerator.water = 3 / ulopersGenerator.arr[0].length;
 
 module.exports = {
-    ulopers: ulopersGenerator
+    planets: ulopersGenerator
 };
