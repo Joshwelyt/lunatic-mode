@@ -10,7 +10,7 @@ const ulopers = extend(Planet, "ulopers", Planets.sun, 3, 3, {
     atmosphereRadOut: 0.09,
     localizedName: "Ulopers"
 });
-ulopers.meshLoader = () => extend(HexMesh, templura, 6, {});
+ulopers.meshLoader = () => extend(HexMesh, ulopers, 6, {});
 
 const graveyard = extend(SectorPreset, "graveyard", ulopers, 3, {
     captureWave: 40,
