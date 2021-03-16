@@ -1,6 +1,5 @@
 require("content/turrets");
 require("content/blocks");
-//require("moontest");
 
 Vars.content.units().each(e => e.health *= 2);
 Planets.serpulo.orbitRadius = 5.6;
@@ -17,6 +16,6 @@ Events.on(ClientLoadEvent, () => {
   Vars.renderer.maxZoom = 10.99999;
   Vars.renderer.minZoom = 20.99999;
 });
-Events.on(Trigger.newGame.class,e=>{Vars.state.rules.winWave = 60});
+Events.on(Trigger.newGame.class,e=>{Vars.state.rules.winWave = 100});
 Vars.content.units().each(s=>s.speed = 0.10);
 print("Load Complete!");
