@@ -1,6 +1,6 @@
 require("content/turrets");
 require("content/blocks");
-require("campaign/planets");
+require("campaign/planet");
 
 var hell = extend(SectorPreset, "hell", Planets.serpulo, 206, {
     localizedName: "Hell",
