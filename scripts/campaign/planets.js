@@ -33,61 +33,14 @@ var arrs = [
     ulopers.atmosphereRadIn = 0.075;
     ulopers.atmosphereRadOut = 0.3;
     ulopers.startSector = 1;
-    ulopers.localizedName = "Ulopers";
+    ulopers.localizedName = "[accent]Ulopers";
 
     Planets.sun.accessible = true;
     Planets.sun.localizedName = "[coral]Sun"
+    Planets.serpulo.localizedName = "[purple]Serpulo"
 
-
-
-
-
-
-
-
-
-    const antarcticaSurvival = new SectorPreset("antarcticaSurvival", tantrosia, 1);
-    antarcticaSurvival.captureWave = 60;
-    antarcticaSurvival.localizedName = "Antarctica Survival";
-    antarcticaSurvival.difficulty = 6;
-    antarcticaSurvival.alwaysUnlocked = true;
-
-    const centralBase = new SectorPreset("centralBase", grasia, 6);
-    centralBase.captureWave = 55;
-    centralBase.localizedName = "Centeral Base";
-    centralBase.difficulty = 6;
-    centralBase.alwaysUnlocked = true;
-
-
-    const desertCanyon = new SectorPreset("desertCanyon", grasia, 7);
-    desertCanyon.captureWave = 40;
-    desertCanyon.localizedName = "Desert Canyon";
-    desertCanyon.difficulty = 5;
-    desertCanyon.alwaysUnlocked = true;
-
-    const iceBreak = new SectorPreset("iceBreak", tantrosia, 2);
-    iceBreak.localizedName = "Ice Break";
-    iceBreak.difficulty = 8;
-    iceBreak.alwaysUnlocked = true;
-
-    const polarOutpost = new SectorPreset("polarOutpost", tantrosia, 3);
-    polarOutpost.localizedName = "Polar Outpost";
-    polarOutpost.difficulty = 5;
-    polarOutpost.alwaysUnlocked = true;
-
-    const saltirekArchipelago = new SectorPreset("saltirekArchipelago", Planets.serpulo, 4);
-    saltirekArchipelago.localizedName = "Saltirek Archipelago";
-    saltirekArchipelago.difficulty = 5;
-    saltirekArchipelago.alwaysUnlocked = true;
-
-    const saltirekLanding = new SectorPreset("saltirekLanding", Planets.serpulo, 5);
-    saltirekLanding.localizedName = "Saltirek Landing";
-    saltirekLanding.difficulty = 7;
-    saltirekLanding.alwaysUnlocked = true;
-
-    const sporeErosion = new SectorPreset("sporeErosion", Planets.serpulo, 8);
-    sporeErosion.localizedName = "Spore Erosion";
-    sporeErosion.difficulty = 8;
-    sporeErosion.alwaysUnlocked = true;
-
-});
+    const graveyard = new SectorPreset("graveyard", ulopers, 1);
+    graveyard.captureWave = 60;
+    graveyard.localizedName = "[black]Graveyard";
+    graveyard.difficulty = 6;
+    graveyard.alwaysUnlocked = true;
