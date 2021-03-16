@@ -3,6 +3,12 @@ require("content/blocks");
 require("ulopers");
 require("stuff/techTree");
 
+var hell = extend(SectorPreset, "hell", Planets.serpulo, 206, {
+    localizedName: "Hell",
+    difficulty: 10,
+    alwaysUnlocked: true
+});
+
 Vars.content.units().each(e => e.health *= 2);
 Planets.serpulo.orbitRadius = 5.6;
 if(!Vars.headless){
