@@ -1,13 +1,13 @@
 //storming magma with a slight of grey
 const fireEffect = new Effect(60, e => {
-    Draw.color(Color.valueOf("ffdd55"));
+    Draw.color(Color.valueOf("404040"));
     Fill.circle(e.x, e.y, e.fout() * 2);
 });
 
 const magma = new StatusEffect("magma");
 magma.speedMultiplier = 0.6;
 magma.damage = 0.05;
-magma.color = Color.valueOf("ffdd55");
+magma.color = Color.valueOf("404040");
 magma.effect = fireEffect;
 
 const magmaStorm = new ParticleWeather("magmaStorm");
@@ -29,5 +29,5 @@ magmaStorm.density = 2600;
 magmaStorm.opacityMultiplier = 1;
 magmaStorn.noiseLayers = 8;
 magmaStorn.status = magma;
-magmaStorm.color = Color.valueOf("ffdd55");
+magmaStorm.color = Color.valueOf("404040");
 magmaStorm.noiseColor = Color.valueOf("a2a2a2");
