@@ -1,5 +1,5 @@
+//content
 require("content/turrets");
-require("weathers");
 require("content/planets");
 
 Planets.sun.atmosphereRadOut = 5;
