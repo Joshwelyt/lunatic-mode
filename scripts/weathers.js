@@ -30,4 +30,4 @@ magmaStorm.opacityMultiplier = 1;
 magmaStorn.noiseLayers = 8;
 magmaStorn.status = magma;
 magmaStorm.color = Color.valueOf("404040");
-magmaStorm.noiseColor = Color.valueOf("a2a2a2");
+magmaStorm.noiseColor = Color.valueOf("787878");
