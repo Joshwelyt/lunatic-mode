@@ -1,6 +1,7 @@
 //content
 require("content/turrets");
 require("content/planets");
+require("content/moddedunits")
 //notina folder
 require("insulate");
 
