@@ -1,6 +1,8 @@
 //content
 require("content/turrets");
 require("content/planets");
+//notina folder
+require("insulate");
 
 Planets.sun.atmosphereRadOut = 5;
 Planets.sun.lightColor = Color.purple;
