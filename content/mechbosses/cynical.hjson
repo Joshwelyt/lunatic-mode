@@ -1,0 +1,85 @@
+type: mech
+name: cynical
+description: basic boss unit might be the first one u make
+health: 3000
+hitSize: 32
+canDrown: false
+armor: 4
+speed: 0.5
+buildSpeed: 1.4
+rotateSpeed: 2.4
+commandLimit: 6
+singleTarget: true
+weapons: [
+  {
+    name: cynical-weapon
+    x: 17.5
+    y: 0
+    shootY: 12
+    shots: 4
+    shotDelay: 6
+    reload: 15
+    recoil: 4
+    top: false
+    shootSound: bang
+    bullet: {
+      damage: 50
+      speed: 9
+      lifetime: 25
+      pierce: true
+      pierceBuilding: true
+      pierceCap: 6
+      collidesTeam: true
+      healPercent: 16
+      frontColor: ffdd55
+      backColor: ffdd55
+      width: 16
+      height: 32
+    }
+  }
+  {
+    name: cynical-missile
+    x: 0
+    y: 0
+    rotate: true
+    recoil: 3
+    reload: 15
+    top: true
+    velocityRnd: 0.4
+    bullet: {
+      type: MissileBulletType
+      damage: 50
+      speed: 5
+      lifetime: 235
+      collidesTeam: true
+      healPercent: 3
+      splashDamageRadius: 18
+      despawnEffect: hitLaser
+      smokeEffect: hitLaser
+      hitEffect: none
+      frontColor: ffdd55
+      backColor: ffdd55
+      trailColor: ffdd55
+      weaveMag: 4
+      weaveScale: 8
+    }
+  }
+] 
+research: {
+	parent: mace
+        requirements:
+    [
+        {item: copper, amount: 5000},
+        {item: silicon, amount: 2300},
+        {item: graphite, amount: 1500},
+    ]
+}
+requirements: {
+	block: ground-factory
+	time: 2400
+        requirements: [
+		silicon/50
+		titanium/50
+		lead/50
+        ]
+}
