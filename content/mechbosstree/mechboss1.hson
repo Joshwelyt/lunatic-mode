@@ -5,33 +5,52 @@ armor: 3.3
 speed: 0.50
 drag: 0.7
 accel: 2
-hitSize: 8
+hitSize: 5
 boostMultiplier: 1.25
-range: 235
+range: 200
 canDrown: false
 canBoost: true
 buildSpeed: 5
+riseSpeed: 0.50
+fallSpeed: 0.50
 mineSpeed: 5
+crashDamageMultiplier: 1.0
+targetAir: true
+targetGround: true
 mineTier: 7
 itemCapacity: 100
 faceTarget: true
+mechStride: -1.0
 rotateSpeed: 2
+mechStepShake: 0.50
+mechLegColor: 6e7080ff
+lightColor: a2a2a2
+lightOpacity: 1.0
+lightRadius: 30.0
+drawCell: true
+drawItems: false
+groundLayer: 60.0
 lowAltitude: true
 omniMovement: true
 weapons: [
-{
-name: exo-charger
-reload: 100
-alternate: true
-ejectEffect: casing2
-top: false
-shootSound: shoot
-x: 12.5
-y: 0
-rotate: false
-shots: 3
-spacing: 15
-bullet: {
+  {
+  name: cyanical-missiles
+    shootCone: 15
+    mirror: true
+    alternate: true
+    rotate: false
+    top: false
+    ejectEffect: none
+    x: 7
+    y: -1
+    reload: 30
+    shots: 5
+    spacing: 3.3
+    shake: 0.0
+    inaccuracy: 1.0
+    heatColor: ff0012
+    recoil: 0.5
+    bullet: {
 type: ArtilleryBulletType
 damage: 35
 speed: 1.5
@@ -49,7 +68,7 @@ fragCone: 30
 fragVelocityMin: 0.6
 fragBullets: 25
 fragCone: 45
-keepVelocity: false
+keepVelocity: true
 fragBullet: {
 type: BasicBulletType
 damage: 1
@@ -71,189 +90,17 @@ keepVelocity: false
 }
 }
 }
-{
-name: aged-blaster
-reload: 55
-recoil: 0.1
-alternate: true
-mirror: true
-ejectEffect: casing2
-top: true
-shootSound: pew
-x: 10
-y: 0.5
-shots: 3
-shotDelay: 4.5
-rotate: true
-bullet: {
-type: BasicBulletType
-damage: 12.5
-splashDamage: 5.5
-splashDamageRadius: 45
-frontColor: eeb393
-backColor: a97567
-hitEffect: explosion
-despawnEffect: pulverizeRed
-speed: 3
-width: 10
-height: 16
-lifetime: 95
-keepVelocity: false
-}
-}
-{
-name: none
-reload: 55
-recoil: 0.1
-alternate: true
-mirror: true
-ejectEffect: casing2
-top: true
-shootSound: pew
-x: 10
-y: 0.5
-shots: 12
-shotDelay: 2.5
-inaccuracy: 5
-rotate: true
-bullet: {
-type: BasicBulletType
-damage: 5
-knockback: -1
-splashDamage: 2.5
-splashDamageRadius: 45
-frontColor: eeb393
-backColor: a97567
-hitEffect: explosion
-despawnEffect: pulverizeRed
-speed: 3
-drag: -0.001
-width: 3
-height: 6
-lifetime: 95
-keepVelocity: false
-}
-}
-{
-name: aged-blaster
-reload: 75
-recoil: 0.1
-alternate: false
-mirror: true
-ejectEffect: casing2
-top: true
-shootSound: pew
-x: 13
-y: -0.5
-inaccuracy: 5
-shots: 3
-shotDelay: 5
-rotate: true
-bullet: {
-type: ArtilleryBulletType
-sprite: bullet
-trailEffect: none
-hitEffect: explosion
-despawnEffect: pulverizeRed
-damage: 0
-splashDamage: 0
-splashDamageRadius: 15
-knockback: -0.5
-collides: true
-collidesAir: true
-collidesTiles: true
-frontColor: eeb393
-backColor: a97567
-hitSound: none
-speed: 5
-width: 6
-height: 10
-lifetime: 40
-keepVelocity: false
-fragBullets: 5
-fragVelocityMax: 0.5
-fragLifeMin: 0.57
-fragLifeMax: 1.26
-fragBullet:{
-type: BombBulletType
-splashDamage: 0
-lifetime: 125
-collides: true
-collidesAir: true
-collidesTiles: true
-frontColor: eeb393
-backColor: a97567
-width: 10
-length: 10
-shrinkX: 1
-shrinkY: 1
-hitSound: spark
-fragBullets: 1
-fragBullet:{
-type: LightningBulletType
-status: none
-lightningLength: 2
-lightningLengthRand: 3
-damage: 1
-fragBullets: 1
-fragBullet:{
-type: LiquidBulletType
-liquid: water
-knockback: 0
-orbSize: 0
-puddleSize: 15
-lifetime: 0
-fragBullet: {}
-}
-}
-}
-}
-}
-{
-name: none
-reload: 480
-ejectEffect: casing3
-mirror: true
-alternate: true
-top: false
-shootSound: shoot
-shootShake: 0.5
-x: 12.5
-y: 0
-rotate: false
-shots: 100
-shotDelay: 2.5
-inaccuracy: 120
-bullet: {
-type: MissileBulletType
-trailEffect: none
-damage: 10
-drag: -0.001
-status: corroded
-statusDuration: 360
-pierce: true
-pierceCap: 2
-weaveMag: 2
-weaveScale: 10
-buildingDamageMultiplier: 0.1
-speed: 2
-width: 5
-height: 8
-lifetime: 200
-homingPower: 0.005
-homingRange: 400
-hitSound: pew
-keepVelocity: false
-}
-}]
+]
 immunities: [
 freezing,
-corroded
+corroded,
+burning
 ]
 research: {
-parent: rustytau
+parent: mace
 requirements: [
-    iron/2500
+    thorium/1000
+    silicon/100
     titanium/550
 ]
 }
