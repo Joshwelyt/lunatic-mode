@@ -13,8 +13,8 @@ singleTarget: true
 weapons: [
   {
     name: cynical-missile
-    x: 9
-    y: -4
+    x: 7
+    y: -2
     rotate: true
     recoil: 3
     reload: 15
