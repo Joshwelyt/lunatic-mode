@@ -1,6 +1,6 @@
 //turret stuff
 Vars.content.blocks().each(e => {
-    if(e instanceof Turret && e.team == Team.sharded) {
+    if(e instanceof Turret && e.team == Team.sharded)} {
         e.reloadTime = 80;
         e.spread = 50;
         e.inaccuracy = 80;
