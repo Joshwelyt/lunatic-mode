@@ -20,10 +20,9 @@ var blockArray=["copperWall","copperWallLarge","titaniumWall","titaniumWallLarge
 "blastDrill","waterExtractor","cultivator","oilExtractor","vault","container",
 "unloader","launchPad","launchPadLarge","duo","scatter","scorch","hail","wave",
 "lancer","arc","swarmer","salvo","fuse","ripple","cyclone","spectre","meltdown",
-"draugFactory","spiritFactory","phantomFactory","commandCenter","wraithFactory",
-"ghoulFactory","revenantFactory","daggerFactory","crawlerFactory","titanFactory",
-"fortressFactory","repairPoint","dartPad","deltaPad","tauPad","omegaPad","javelinPad",
-"tridentPad","glaivePad","message","powerSource","powerVoid","itemSource","itemVoid","liquidSource","liquidVoid","message","illuminator"];
+"foreshadow","overdriveDome","commandCenter",
+"repairPoint",
+"message","powerSource","powerVoid","itemSource","itemVoid","liquidSource","liquidVoid","message","illuminator"];
 for(var i=0;i<blockArray.length;i++){
    insulate(blockArray[i]);
 };
