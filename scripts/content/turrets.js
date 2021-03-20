@@ -10,7 +10,6 @@ Vars.content.blocks().each(e => {
         e.cooldown = 100;
         e.rotateSpeed = 2;
         e.targetGround = true;
-        e.team = Team.sharded;
         e.targetAir = true;
         if(typeof(e.shootType) !== "undefined") {
             if(typeof(e.shootType.collidesGround) !== "undefined") e.shootType.collidesGround = true;
