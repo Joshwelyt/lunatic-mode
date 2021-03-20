@@ -1,6 +1,6 @@
 //turret stuff
 Vars.content.blocks().each(e => {
-    if(e instanceof Turret && e.team == Team.sharded)} {
+    if(e instanceof Turret && e.team == Team.sharded) {
         e.reloadTime = 80;
         e.spread = 50;
         e.inaccuracy = 80;
@@ -10,6 +10,7 @@ Vars.content.blocks().each(e => {
         e.cooldown = 100;
         e.rotateSpeed = 2;
         e.targetGround = true;
+        e.team = Team.sharded;
         e.targetAir = true;
         if(typeof(e.shootType) !== "undefined") {
             if(typeof(e.shootType.collidesGround) !== "undefined") e.shootType.collidesGround = true;
